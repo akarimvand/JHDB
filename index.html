@@ -65,9 +65,6 @@
     }
     .table-container {
       overflow-x: auto;
-      max-height: 400px; /* حداکثر ارتفاع برای اسکرول عمودی */
-      overflow-y: auto;
-      position: relative;
     }
     .table {
       border-radius: 10px;
@@ -79,17 +76,13 @@
       font-weight: bold;
       text-align: center;
       border: none;
-      white-space: nowrap;
-      background-color: #f8f9fa; /* رنگ پس‌زمینه سرستون‌ها */
-      position: sticky; /* فریز کردن سرستون‌ها */
-      top: 0; /* ثابت نگه داشتن در بالای جدول */
-      z-index: 1; /* اطمینان از نمایش روی داده‌ها */
+      white-space: nowrap; /* جلوگیری از WRAP */
     }
     .table tbody td {
       text-align: center;
       vertical-align: middle;
       font-size: 14px;
-      white-space: nowrap;
+      white-space: nowrap; /* جلوگیری از WRAP */
     }
     .gray-header {
       background-color: #6c757d !important;
